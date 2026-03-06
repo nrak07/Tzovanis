@@ -1,0 +1,265 @@
+    <!DOCTYPE html>
+    <html lang="en" style="height: 100%">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tzovanis Barbershop</title>
+        <link rel="icon" href="IMG_6852.JPEG" type="image/x-icon">
+    </head>
+    <style>
+       
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("ca1cdf2d-3f60-46e1-8bb9-7e51fba7b713-TzovanisBarbershop-GR-Fresha.avif");
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+#top {
+    background-color: rgb(33,61,47);
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+#main {
+    width: 80px;
+    height: auto;
+}
+
+#welcome {
+    font-size: 20px;
+    color: white;
+    margin-top: 5px;
+}
+
+#bigger {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.kr {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.kr:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.slider {
+    width: 90%;
+    max-width: 500px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    margin: 20px auto;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: slide 12s infinite;
+}
+
+.slider img:nth-child(1) { animation-delay: 0s; }
+.slider img:nth-child(2) { animation-delay: 4s; }
+.slider img:nth-child(3) { animation-delay: 8s; }
+.slider img:nth-child(4) { animation-delay: 12s; }
+.slider img:nth-child(5) { animation-delay: 16s; }
+
+@keyframes slide {
+    0% { opacity: 0; }
+    8% { opacity: 1; }
+    33% { opacity: 1; }
+    41% { opacity: 0; }
+    100% { opacity: 0; }
+}
+#bottom {
+    background-color: rgb(33,61,47);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bottom h1 {
+    margin-bottom: 15px;
+}
+
+#address, #bottom a {
+    color: white;
+    text-decoration: none;
+    word-break: break-word;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#insta{
+    background-color: rgb(193, 38, 193);
+    border: 0px solid black;
+}
+#fb{
+    background-color: blue;
+    border: 3.5px solid black;
+}
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    #bigger {
+        font-size: 24px;
+    }
+
+    #kr {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .slider {
+        width: 95%;
+        max-width: 400px;
+        aspect-ratio: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    #welcome {
+        font-size: 16px;
+    }
+
+    #bigger {
+        font-size: 20px;
+    }
+
+    .kr {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .slider {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #bottom {
+        padding: 20px 10px;
+    }
+
+    #bottom h1 {
+        font-size: 18px;
+    }
+
+    .social-icons img {
+        width: 35px;
+        height: 35px;
+    }
+}
+.imagess{ 
+  display:flex;
+  gap:10px;
+}
+    </style>
+
+    <body>
+        <div id="top">
+            <img src="IMG_6852.JPEG" id="main">
+            <p id="welcome">Welcome to</p>
+            <h1 id="bigger">TZOVANIS BARBERSHOP</h1>
+            <a href="https://www.fresha.com/el/a/tzovanis-barbershop-aharnes-filadelfeias-235-m3swtli9" target="_blank" ><button class="kr">Κλείστε ραντεβού τώρα!</button></a>
+            
+        </div>
+        
+          
+            <div class="slider">
+               <img src="IMG_6847.JPEG" alt="Image 1">
+               <img src="IMG_6848.JPEG" alt="Image 2">
+               <img src="IMG_6849.JPEG" alt="Image 3">
+               <img src="IMG_6850.JPEG" alt="Image 4">
+               <img src="IMG_6851.JPEG" alt="Image 5">
+            </div>
+          
+    <br><br>    
+    <div id="bottom"> 
+      
+     
+        <h1 style="text-align: center;">Πληροφορίες</h1>
+       
+           📍&nbsp;&nbsp;<a href="https://www.google.com/maps/place/Tzovanis+Barbershop/@38.0569729,23.7377754,37m/data=!3m1!1e3!4m6!3m5!1s0x14a1a3ca9790f26f:0xc866585f388f16ce!8m2!3d38.0569776!4d23.7379211!16s%2Fg%2F11vwzbp2vh!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDMwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" id="address" style="font-family: sans-serif;">Λεωφόρος Φιλαδελφείας 235, Αχαρναί</a>
+           📞 &nbsp;&nbsp;<a href="tel:2112175190" style="color:white">2112175190</a>
+           📧&nbsp;&nbsp;<a href="mailto:Tzovanisbarbershop30@gmail.com" style="color:white">Tzovanisbarbershop30@gmail.com</a>
+           
+        <div class="social-icons">
+          <img src="IMG_6789.PNG" alt="Image with map" usemap="#map1" id="insta">   
+          <map name="map1">
+            <area href="https://www.instagram.com/tzovanis_barbershop/" target="_blank" alt="χάρτης" shape="rect" coords="0,0,40,40">
+          </map>
+          <img src="IMG_6790.PNG" alt="Image with map" usemap="#map2" id="fb">
+          <map name="map2">
+            <area href="https://www.facebook.com/p/Tzovanis-Barbershop-100063645204941/" target="_blank" alt="χάρτης" shape="rect" coords="0,0,40,40">
+          </map>
+        </div><br><br>
+        <div class="imagess">
+         <img src="kritiki1.png" style="width: 180px; height: 120px"> 
+         <img src="kritiki2.png"  style="width: 180px; height: 120px;"><br>
+        
+     </div><br>
+     <a href="https://www.fresha.com/el/a/tzovanis-barbershop-aharnes-filadelfeias-235-m3swtli9?reviews=true" target="_blank"><button class="kr">Δείτε όλες τις κριτικές εδώ</button></a>    <br>
+    </div>
+
+
+    
+
+    </body>
+    </html>
