@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://tzovanisbarbershop.gr/sitemap.xml
